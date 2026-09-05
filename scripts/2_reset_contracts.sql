@@ -33,21 +33,3 @@ CREATE TABLE contracts (
     created_at TIMESTAMP NOT NULL DEFAULT NOW()
 
 );
-
--- Insert a sample contract for testing
-
-INSERT INTO contracts (
-    user_id,
-    name,
-    s3_key,
-    status,
-    created_at
-)
-
-VALUES (
-    1,
-    'Sample Service Agreement',
-    'contracts/1/sample-service-agreement.pdf',
-    'UPLOADED',
-    NOW()
-);

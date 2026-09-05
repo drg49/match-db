@@ -28,28 +28,3 @@ CREATE TABLE users (
   -- Timestamp
   created_at TIMESTAMP NOT NULL DEFAULT NOW()
 );
-
--- Insert a sample user for testing
-INSERT INTO users (
-  email,
-  first_name,
-  last_name,
-  phone_number,
-  password,
-  bio,
-  location,
-  is_active,
-  created_at
-)
-VALUES
-  (
-    'user1@example.com', 
-    'Taylor', 
-    'Swiftly', 
-    '+15554448888', 
-    'hashed_pass_3', 
-    'Weekend musician, dog lover, and full-time software developer.', 
-    'New York, NY', 
-    TRUE, 
-    NOW()
-  );
