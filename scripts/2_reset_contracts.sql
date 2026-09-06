@@ -2,10 +2,15 @@
 
 DROP TABLE IF EXISTS contracts;
 
+-- Drop enum type
+
+DROP TYPE IF EXISTS contract_analysis_status;
+
 -- Create enum type
 
 CREATE TYPE contract_analysis_status AS ENUM (
     'UPLOADED',
+    'QUEUED',
     'ANALYZING',
     'ANALYZED',
     'FAILED'
